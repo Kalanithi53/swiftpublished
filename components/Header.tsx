@@ -1,3 +1,4 @@
+'use client'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
@@ -5,13 +6,14 @@ import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
+import { usePathname } from 'next/dist/client/components/navigation'
 
 const Header = () => {
-  let headerClass = 'flex items-center w-full bg-white dark:bg-[#1a2f40] justify-between py-10'
+  let headerClass = 'flex items-center w-full bg-white dark:bg-[#161615] justify-between py-10'
   if (siteMetadata.stickyNav) {
     headerClass += ' sticky top-0 z-50'
   }
-
+  const path = usePathname()
   return (
     <header className={headerClass}>
       <Link href="/" aria-label={siteMetadata.headerTitle}>
@@ -36,7 +38,7 @@ const Header = () => {
               <Link
                 key={link.title}
                 href={link.href}
-                className="block font-medium text-gray-900 hover:text-[#86d63e] dark:text-gray-100 dark:hover:text-primary-400"
+                className={`block font-medium ${path.startsWith(link.href) ? 'text-[#f97734]' : 'dark:text-whtie text-gray-900'} hover:text-[#f97734] dark:text-gray-100 dark:hover:text-[#f97734]`}
               >
                 {link.title}
               </Link>

@@ -8,8 +8,8 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://shift-published.vercel.app/',
   siteRepo: 'https://github.com/kalanithibala053/tailwind',
-  siteLogo: '',
-  socialBanner: '/static/images/twitter-card.png',
+  siteLogo: '/images/socal.jpg',
+  socialBanner: '/images/socal.jpg',
   mastodon: '',
   email: 'i.app.dev.91@gmail.com',
   github: 'https://github.com',

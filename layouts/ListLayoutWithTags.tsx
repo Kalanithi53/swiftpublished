@@ -84,33 +84,36 @@ export default function ListLayoutWithTags({
           </h1>
         </div>
         <div className="flex sm:space-x-24">
-          <div className="hidden h-full max-h-screen min-w-[280px] max-w-[280px] flex-wrap overflow-auto rounded bg-gray-50 pt-5 shadow-md dark:bg-gray-900/70 dark:shadow-gray-800/40 sm:flex">
+          <div className="sticky top-[10px] hidden h-full max-h-screen min-w-[280px] max-w-[280px] flex-wrap overflow-auto rounded bg-gray-50 pt-5 shadow-md dark:bg-[#48342f33] dark:shadow-gray-800/40 sm:flex">
             <div className="px-6 py-4">
               {pathname.startsWith('/blog') ? (
-                <h3 className="font-bold uppercase text-[#86d63e]">All Posts</h3>
+                <h3 className="font-bold uppercase text-[#f97734]">All Posts</h3>
               ) : (
                 <Link
                   href={`/blog`}
-                  className="font-bold uppercase text-gray-700 hover:text-[#86d63e] dark:text-gray-300 dark:hover:text-[#86d63e]"
+                  className="font-bold uppercase text-gray-700 hover:text-[#f97734] dark:text-gray-300 dark:hover:text-[#f97734]"
                 >
                   All Posts
                 </Link>
               )}
               <ul>
                 {sortedTags.map((t) => {
+                  const tag = t.replaceAll('-', ' ')
+                  const isActive = decodeURI(pathname.split('/tags/')[1]) === slug(t)
+
                   return (
                     <li key={t} className="my-3">
-                      {decodeURI(pathname.split('/tags/')[1]) === slug(t) ? (
-                        <h3 className="inline px-3 py-2 text-sm font-bold uppercase text-[#86d63e]">
-                          {`${t} (${tagCounts[t]})`}
+                      {isActive ? (
+                        <h3 className="inline px-3 py-2 text-sm font-bold uppercase text-[#f97734]">
+                          {tag}
                         </h3>
                       ) : (
                         <Link
                           href={`/tags/${slug(t)}`}
-                          className="px-3 py-2 text-sm font-medium uppercase text-gray-500 hover:text-[#86d63e] dark:text-gray-300 dark:hover:text-[#86d63e]"
-                          aria-label={`View posts tagged ${t}`}
+                          className="px-3 py-2 text-sm font-medium uppercase text-gray-500 hover:text-[#f97734] dark:text-gray-300 dark:hover:text-[#f97734]"
+                          aria-label={`View posts tagged ${tag}`}
                         >
-                          {`${t} (${tagCounts[t]})`}
+                          {tag}
                         </Link>
                       )}
                     </li>
