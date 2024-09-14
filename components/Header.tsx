@@ -38,7 +38,7 @@ const Header = () => {
               <Link
                 key={link.title}
                 href={link.href}
-                className={`block font-medium ${path.startsWith(link.href) ? 'text-[#f97734]' : 'dark:text-whtie text-gray-900'} hover:text-[#f97734] dark:text-gray-100 dark:hover:text-[#f97734]`}
+                className={`block font-medium ${path.startsWith(link.href) ? 'text-[#f97734]' : 'dark:text-whtie text-gray-900'} hover:text-[#f97734]  dark:hover:text-[#f97734]`}
               >
                 {link.title}
               </Link>
