@@ -78,7 +78,7 @@ const ThemeSwitch = () => {
                     {({ active }) => (
                       <button
                         className={`${
-                          active ? 'bg-primary-600 text-white' : ''
+                          active ? 'bg-[#f97734] text-black' : ''
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
                         <div className="mr-2">
@@ -94,7 +94,7 @@ const ThemeSwitch = () => {
                     {({ active }) => (
                       <button
                         className={`${
-                          active ? 'bg-primary-600 text-white' : ''
+                          active ? 'bg-[#f97734] text-black' : ''
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
                         <div className="mr-2">
@@ -110,7 +110,7 @@ const ThemeSwitch = () => {
                     {({ active }) => (
                       <button
                         className={`${
-                          active ? 'bg-primary-600 text-white' : ''
+                          active ? 'bg-[#f97734] text-black' : ''
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
                         <div className="mr-2">
