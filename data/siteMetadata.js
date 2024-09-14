@@ -1,8 +1,8 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Swiftpublished',
+  title: 'Swift Published',
   author: 'Muralidharan Kathiresan',
-  headerTitle: 'Swiftpublished',
+  headerTitle: 'Swift Published',
   description: `Innovative IT professional with good industrial exposure and proven expertise in the latest trends and techniques of the field in terms of mobile technology.`,
   language: 'en-us',
   theme: 'system', // system, dark or light
