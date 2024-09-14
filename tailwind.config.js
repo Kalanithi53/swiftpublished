@@ -37,11 +37,11 @@ module.exports = {
         DEFAULT: {
           css: {
             a: {
-              color: theme('colors.primary.500'),
+              color: '#f97734', // Set the anchor tag color to #f97734
               '&:hover': {
-                color: `${theme('colors.primary.600')}`,
+                color: '#f97734', // Set the hover color to #f97734
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: '#f97734' },
             },
             'h1,h2': {
               fontWeight: '700',
@@ -58,11 +58,11 @@ module.exports = {
         invert: {
           css: {
             a: {
-              color: theme('colors.primary.500'),
+              color: '#f97734', // Set the inverted anchor tag color to #f97734
               '&:hover': {
-                color: `${theme('colors.primary.400')}`,
+                color: '#f97734', // Set the inverted hover color to #f97734
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: '#f97734' },
             },
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100'),
