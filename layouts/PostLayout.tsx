@@ -111,8 +111,8 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 </div>
               )}
             </div>
-            <footer>
-              <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
+            <footer className=" ">
+              <div className="sticky top-[10px] divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
@@ -149,15 +149,15 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                     )}
                   </div>
                 )}
-              </div>
-              <div className="pt-4 xl:pt-8">
-                <Link
-                  href={`/${basePath}`}
-                  className="text-[#f97734] hover:text-[#0a0a0a] dark:hover:text-[#f97734]"
-                  aria-label="Back to the blog"
-                >
-                  &larr; Back to the blog
-                </Link>
+                <div className="pt-4 xl:pt-8">
+                  <Link
+                    href={`/${basePath}`}
+                    className="text-[#f97734] hover:text-[#0a0a0a] dark:hover:text-[#f97734]"
+                    aria-label="Back to the blog"
+                  >
+                    &larr; Back to the blog
+                  </Link>
+                </div>
               </div>
             </footer>
           </div>
