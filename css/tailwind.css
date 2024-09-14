@@ -58,3 +58,7 @@ input:-webkit-autofill:focus {
   display: inline-block;
   vertical-align: middle;
 }
+
+.break-words{
+  color:"#f97734 !important"
+}
