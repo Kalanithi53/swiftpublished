@@ -37,9 +37,9 @@ module.exports = {
         DEFAULT: {
           css: {
             a: {
-              color: '#f97734', // Set the anchor tag color to #f97734
+              color: '#f97734', 
               '&:hover': {
-                color: '#f97734', // Set the hover color to #f97734
+                color: '#f97734', 
               },
               code: { color: '#f97734' },
             },
