@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://shift-published.vercel.app/',
   siteRepo: 'https://github.com/kalanithibala053/tailwind',
   siteLogo: '/images/socal.jpg',
-  socialBanner: '/images/socal.jpg',
+  socialBanner: '/static/images/avatar.png',
   mastodon: '',
   email: 'i.app.dev.91@gmail.com',
   github: 'https://github.com',
