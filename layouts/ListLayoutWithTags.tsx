@@ -74,13 +74,13 @@ export default function ListLayoutWithTags({
   const sortedTags = tagKeys.sort((a, b) => tagCounts[b] - tagCounts[a])
 
   const displayPosts = initialDisplayPosts.length > 0 ? initialDisplayPosts : posts
-
+const tilts=title?.replaceAll("-"," ")
   return (
     <>
       <div>
         <div className="pb-6 pt-6">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:hidden sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            {title.replaceAll("-"," ")}
+            {tilts}
           </h1>
         </div>
         <div className="flex sm:space-x-24">
